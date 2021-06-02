@@ -5,6 +5,8 @@ import hazel from "./images/hazel.jpg"
 import tubby from "./images/tubby.jpg"
 import Nav from './Nav';
 import { Route, Switch } from 'react-router-dom';
+import Dog from './Dog';
+import DogList from './DogList';
 
 class App extends Component {
   static defaultProps = {
@@ -46,8 +48,8 @@ class App extends Component {
       <div className="App">
         <Nav dogs={this.props.dogs} />
         <Switch>
-          <Route exact path="/" render={() => <h1>Shelter home page</h1>} />
-          { this.props.dogs.map(dog => <Route exact path={`/${dog.name.toLowerCase()}`} render={() => <h1>{dog.name}</h1>} />)}
+          <Route exact path="/" render={() => <DogList dogs={this.props.dogs} />} />
+          { this.props.dogs.map(dog => <Route exact path={`/${dog.name.toLowerCase()}`} render={() => <Dog dog={dog} />} />)}
         </Switch>
         
       </div>
