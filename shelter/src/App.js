@@ -3,7 +3,7 @@ import './App.css';
 import whiskey from "./images/whiskey.jpg"
 import hazel from "./images/hazel.jpg"
 import tubby from "./images/tubby.jpg"
-// import Nav from './Nav';
+import Nav from './Nav';
 import { Route, Switch } from 'react-router-dom';
 
 class App extends Component {
@@ -44,6 +44,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
+        <Nav dogs={this.props.dogs} />
         <Switch>
           <Route exact path="/" render={() => <h1>Shelter home page</h1>} />
           { this.props.dogs.map(dog => <Route exact path={`/${dog.name.toLowerCase()}`} render={() => <h1>{dog.name}</h1>} />)}
