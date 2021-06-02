@@ -13,7 +13,7 @@ class Nav extends Component {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            {this.props.dogs.map(dog => <NavLink to={`/${dog.name}`}>{dog.name}</NavLink>)}
+                            {this.props.dogs.map(dog => <NavLink className="nav-link" to={`/${dog.name}`}>{dog.name}</NavLink>)}
                         </div>
                     </div>
                 </div>
