@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-dog-shelter/static/css/main.344a5944.chunk.css",
+    "main.js": "/react-dog-shelter/static/js/main.7751f96b.chunk.js",
+    "main.js.map": "/react-dog-shelter/static/js/main.7751f96b.chunk.js.map",
+    "runtime-main.js": "/react-dog-shelter/static/js/runtime-main.6aaa06cc.js",
+    "runtime-main.js.map": "/react-dog-shelter/static/js/runtime-main.6aaa06cc.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/react-dog-shelter/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.4d058c33.chunk.js": "/react-dog-shelter/static/js/2.4d058c33.chunk.js",
+    "static/js/2.4d058c33.chunk.js.map": "/react-dog-shelter/static/js/2.4d058c33.chunk.js.map",
+    "static/js/3.3c47b8a3.chunk.js": "/react-dog-shelter/static/js/3.3c47b8a3.chunk.js",
+    "static/js/3.3c47b8a3.chunk.js.map": "/react-dog-shelter/static/js/3.3c47b8a3.chunk.js.map",
+    "index.html": "/react-dog-shelter/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/react-dog-shelter/static/css/2.61b4cb56.chunk.css.map",
+    "static/css/main.344a5944.chunk.css.map": "/react-dog-shelter/static/css/main.344a5944.chunk.css.map",
+    "static/js/2.4d058c33.chunk.js.LICENSE.txt": "/react-dog-shelter/static/js/2.4d058c33.chunk.js.LICENSE.txt",
+    "static/media/hazel.dd56fd82.jpg": "/react-dog-shelter/static/media/hazel.dd56fd82.jpg",
+    "static/media/tubby.df757b62.jpg": "/react-dog-shelter/static/media/tubby.df757b62.jpg",
+    "static/media/whiskey.d49e7e0c.jpg": "/react-dog-shelter/static/media/whiskey.d49e7e0c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6aaa06cc.js",
+    "static/css/2.61b4cb56.chunk.css",
+    "static/js/2.4d058c33.chunk.js",
+    "static/css/main.344a5944.chunk.css",
+    "static/js/main.7751f96b.chunk.js"
+  ]
+}
