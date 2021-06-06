@@ -1,0 +1,19 @@
+.Dog .card {
+    height: 90vh;
+}
+
+.Dog .card .card-image {
+    height: 70%;
+}
+
+.Dog .card .card-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 992px) {
+    .Dog .card {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
