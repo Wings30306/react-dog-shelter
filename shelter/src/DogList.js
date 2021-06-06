@@ -9,7 +9,7 @@ class DogList extends Component {
             <div className="container DogList">
                 <div className="row">
                     {this.props.dogs.map(dog => (
-                        <Link className="col-12 col-md-6 col-lg-4" exact to={`/${dog.name.toLowerCase()}`}>
+                        <Link key={dog.name} className="col-md-6 col-lg-4" exact to={`/${dog.name.toLowerCase()}`}>
                             <img className="rounded-circle img-thumbnail" src={dog.src} alt={dog.name}/>
                             <h2>{dog.name}</h2>
                         </Link>
