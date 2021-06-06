@@ -49,7 +49,7 @@ class App extends Component {
         <Nav dogs={this.props.dogs} />
         <Switch>
           <Route exact path="/" render={() => <DogList dogs={this.props.dogs} />} />
-          { this.props.dogs.map(dog => <Route exact path={`/${dog.name.toLowerCase()}`} render={() => <Dog dog={dog} />} />)}
+          { this.props.dogs.map(dog => <Route key={dog.name} exact path={`/${dog.name.toLowerCase()}`} render={() => <Dog dog={dog} />} />)}
         </Switch>
         
       </div>
