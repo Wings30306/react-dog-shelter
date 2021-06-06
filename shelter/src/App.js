@@ -4,7 +4,7 @@ import whiskey from "./images/whiskey.jpg"
 import hazel from "./images/hazel.jpg"
 import tubby from "./images/tubby.jpg"
 import Nav from './Nav';
-import { Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Dog from './Dog';
 import DogList from './DogList';
 
@@ -46,11 +46,14 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Nav dogs={this.props.dogs} />
-        <Switch>
-          <Route exact path="/" render={() => <DogList dogs={this.props.dogs} />} />
-          { this.props.dogs.map(dog => <Route key={dog.name} exact path={`/${dog.name.toLowerCase()}`} render={() => <Dog dog={dog} />} />)}
-        </Switch>
+         <HashRouter basename='/'>
+           <Nav dogs={this.props.dogs} />
+            <Switch>
+              <Route exact path="/" render={() => <DogList dogs={this.props.dogs} />} />
+              { this.props.dogs.map(dog => <Route key={dog.name} exact path={`/${dog.name.toLowerCase()}`} render={() => <Dog dog={dog} />} />)}
+            </Switch>
+         </HashRouter>
+        
         
       </div>
     );
